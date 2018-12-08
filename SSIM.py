@@ -76,8 +76,8 @@ def ssim(img1, img2, k1=0.01, k2=0.02, L=255, window_size=11):
 
 
 if __name__ == '__main__':
-    img1 = np.asarray(cv2.imread('/home/aldy/桌面/result.3.png', 0))
-    img2 = np.asarray(cv2.imread('/home/aldy/桌面/000001_0.3.jpg', 0))
+    img1 = np.asarray(cv2.imread(path, 0))
+    img2 = np.asarray(cv2.imread(path, 0))
     score = ssim(img1,img2)
 
     print(score)
